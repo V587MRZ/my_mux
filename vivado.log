@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Mar  5 10:00:53 2021
+# Process ID: 32056
+# Current directory: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3872 E:\class\Master of ANU\6213_Digital Systems and Microprocessors\my_6213\lab1\my_mux\project_1.xpr
+# Log file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/vivado.log
+# Journal file: E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.508 ; gain = 0.000uupdate_compile_order -fileset sources_1synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: my_mux
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1298.812 ; gain = 247.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_mux' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.srcs/sources_1/new/my_mux.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'my_mux' (1#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.srcs/sources_1/new/my_mux.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.680 ; gain = 324.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.680 ; gain = 324.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1375.680 ; gain = 324.375
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1375.680 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1500.641 ; gain = 449.336
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1500.641 ; gain = 504.477
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_my_mux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_my_mux_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.sim/sim_1/behav/xsim'
+"xelab -wto f29a0499b26444809b9038141989df30 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_my_mux_behav xil_defaultlib.TB_my_mux xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f29a0499b26444809b9038141989df30 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_my_mux_behav xil_defaultlib.TB_my_mux xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_my_mux_behav -key {Behavioral:sim_1:Functional:TB_my_mux} -tclbatch {TB_my_mux.tcl} -view {{E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/TB_my_mux_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config {E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/TB_my_mux_behav.wcfg}
+source TB_my_mux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 300 ns : File "E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_mux/project_1.srcs/sim_1/new/TB_my_mux.v" Line 23
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_my_mux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1534.086 ; gain = 28.883
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project {E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_Test_Add_1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_Test_Add_1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.sim/sim_1/behav/xsim'
+"xelab -wto 4cc6769182fd43a98d6b15325585e336 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_Test_Add_1_behav xil_defaultlib.TB_Test_Add_1 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4cc6769182fd43a98d6b15325585e336 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_Test_Add_1_behav xil_defaultlib.TB_Test_Add_1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_Test_Add_1_behav -key {Behavioral:sim_1:Functional:TB_Test_Add_1} -tclbatch {TB_Test_Add_1.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source TB_Test_Add_1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 12 ns : File "E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/TB_Test_Add_1.v" Line 25
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Test_Add_1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1534.086 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: my_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1534.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'my_adder' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.srcs/sources_1/new/my_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_adder' (1#1) [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab1/my_adder/my_adder.srcs/sources_1/new/my_adder.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1534.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1534.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1534.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1534.086 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1631.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1641.023 ; gain = 106.938
+4 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1641.023 ; gain = 106.938
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  5 10:30:15 2021...
